@@ -5,7 +5,7 @@ function App() {
   const [msg, setMsg] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:5000/')
+    axios.get('https://mern-backend-wnly.onrender.com')
       .then(res => setMsg(res.data))
       .catch(err => console.error(err));
   }, []);
